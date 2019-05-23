@@ -196,12 +196,24 @@
     }
 #endif
 
-	// Don't generate a KeyDown if Command is pressed
+	// Don't generate a KeyDown if Command is pressed`
 	if (([event modifierFlags] & NSCommandKeyMask) == 0 || !isDown) {
-		int code = [_keyboardMap virtualCodeMatching:(int) [event keyCode]];
-		if (code != FXMappingNotFound) {
-			_inputStates[code] = isDown;
-		}
+        // FIXME - Paco has hardcoded 3P
+        if ([event keyCode] == 31) {
+            _inputStates[7] = isDown;
+            _inputStates[8] = isDown;
+            _inputStates[9] = isDown;
+        // FIXME - Paco has hardcoded 3K
+        } if ([event keyCode] == 37) {
+            _inputStates[10] = isDown;
+            _inputStates[11] = isDown;
+            _inputStates[12] = isDown;
+        } else {
+            int code = [_keyboardMap virtualCodeMatching:(int) [event keyCode]];
+            if (code != FXMappingNotFound) {
+                _inputStates[code] = isDown;
+            }
+        }
 	}
 }
 
