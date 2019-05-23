@@ -1165,7 +1165,7 @@
 		FE0230671957F7F500661A17 /* FXAudioEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXAudioEngine.h; sourceTree = "<group>"; };
 		FE0230681957F7F500661A17 /* FXAudioEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXAudioEngine.m; sourceTree = "<group>"; };
 		FE02306A19595F6800661A17 /* burner_cocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = burner_cocoa.h; sourceTree = "<group>"; };
-		FE08934419475F9800F79190 /* FinalBurnX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalBurnX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE08934419475F9800F79190 /* FinalBurnX-3P3K.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FinalBurnX-3P3K.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE08934719475F9800F79190 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		FE08934A19475F9800F79190 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		FE08934B19475F9800F79190 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -2009,7 +2009,7 @@
 		FE08934519475F9800F79190 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FE08934419475F9800F79190 /* FinalBurnX.app */,
+				FE08934419475F9800F79190 /* FinalBurnX-3P3K.app */,
 				FEAAC5261DC6FCD4008ED3AD /* fbxcli */,
 			);
 			name = Products;
@@ -3411,7 +3411,7 @@
 			);
 			name = FinalBurnX;
 			productName = "FinalBurn X";
-			productReference = FE08934419475F9800F79190 /* FinalBurnX.app */;
+			productReference = FE08934419475F9800F79190 /* FinalBurnX-3P3K.app */;
 			productType = "com.apple.product-type.application";
 		};
 		FEAAC5251DC6FCD4008ED3AD /* fbxcli */ = {
@@ -4829,7 +4829,7 @@
 					"-DSH2_INLINE=\"static inline\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.akop.fbx.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = FinalBurnX;
+				PRODUCT_NAME = "FinalBurnX-3P3K";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -4863,7 +4863,7 @@
 					"-DSH2_INLINE=\"static inline\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.akop.fbx.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = FinalBurnX;
+				PRODUCT_NAME = "FinalBurnX-3P3K";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
